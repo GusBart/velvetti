@@ -1,0 +1,144 @@
+.corpo__container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 5rem 1rem;
+}
+
+.categoria__titulo {
+    color: var(--branco);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.categoria__lista {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categoria__item {
+    display: flex;
+    margin: 0 .5rem .5rem 0;
+}
+
+.categoria__item a {
+    padding: 10px;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--branco);
+    background-color: var(--azul-escuro);
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: inset 3px 0 0 orange;
+    transition: .5s;
+}
+
+.categoria__item a:hover {
+    opacity: 80%;
+    box-shadow: inset 152px 0px 0px orange;
+    color: var(--preto);
+}
+
+
+/*Últimos jogos adicionados*/
+
+.adicionados__titulo {
+    color: var(--branco);
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 30px;
+    background-image: url(../assets/iconmonstr-synchronization-3.svg);
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.adicionados__lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.adicionados__nome {
+    color: var(--branco);
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 7rem;
+    text-transform: capitalize;
+}
+
+.adicionados__capa {
+    border-radius: 5px;
+    width: 150px;
+    margin-right: 1rem;
+}
+
+.adicionados__item {
+    margin: 0 1rem 1rem 0;
+    list-style: none;
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: #1b365a;
+    width: calc(80% / 2);
+}
+
+.adicionados__item a {
+    display: flex;
+}
+
+.adicionados__sobre {
+    border: 1px solid #435467;
+    border-radius: 5px;
+    color: #96a6b7;
+    padding: .1rem;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1063px) {
+
+    .corpo__container {
+        display: block;
+        padding: 1rem .5rem;
+    }
+
+    .categoria__titulo {
+        display: none;
+    }
+    
+    .categoria__lista {
+        display: none;
+    }
+
+    .categoria__esquerda {
+        display: none;
+    }
+
+    .adicionados__titulo {
+        font-size: 25px;
+        text-align: center;
+        background-image: none;
+    }
+
+    .adicionados__item {
+        width: 40%;
+    }
+
+    .adicionados__lista {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 921px) {
+    .adicionados__lista {
+        justify-content: start;
+    }
+
+    .adicionados__item {
+        width: 100%;
+    }
+}

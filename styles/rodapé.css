@@ -1,0 +1,94 @@
+.rodapé {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--azul-escuro);
+    padding: 1.5rem 0 3rem 0;
+    border-top: 1px solid var(--branco);
+    box-shadow: 0 1px 5px var(--branco);
+}
+
+.botão__voltar-inicio {
+    background-image: url(../assets/arrow-up-outline.svg);
+    background-repeat: no-repeat;
+    background-position: 10rem;
+    color: var(--branco);
+    padding-right: 1.5rem;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    animation: seta-inicio 1s infinite alternate ease-in-out;
+}
+
+.botão__voltar-inicio:hover {
+    opacity: 80%;
+}
+
+@keyframes seta-inicio {
+    0% {
+        background-position-y: -.2rem;
+    }
+
+    100% {
+        background-position-y: .1rem;
+    }
+}
+
+.rede-socias__lista {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 2rem 0 1.5rem 0;
+}
+
+.rede-socias__item {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin: 0 1rem;
+    background-color: #1b365a;
+    background-image: url(../assets/rede-sociais/discord-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-position: center;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.facebook {
+    background-image: url(../assets/rede-sociais/iconmonstr-facebook.svg);
+}
+
+.linkendin {
+    background-image: url(../assets/rede-sociais/iconmonstr-linkedin.svg);
+}
+
+.rede-socias__item a {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.rede-socias__item:hover {
+    transform: rotate(360deg);
+    background-image: url(../assets/rede-sociais/discord-icon-hover.svg);
+    background-color: white;
+}
+
+.facebook:hover {
+    background-image: url(../assets/rede-sociais/iconmonstr-facebook-hover.svg);
+}
+
+.linkendin:hover {
+    background-image: url(../assets/rede-sociais/iconmonstr-linkedin-hover.svg);
+}
+
+.rodapé__aviso {
+    margin: 0 2rem;
+    color: var(--branco);
+}
+
+.rodapé__aviso b {
+    color: red;
+}
